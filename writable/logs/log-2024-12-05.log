@@ -1,0 +1,49 @@
+ERROR - 2024-12-05 07:24:33 --> mysqli_sql_exception: Table 'gastos' already exists in C:\xampp\htdocs\canal\codeigniter\login\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\canal\codeigniter\login\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `g...', 0)
+#1 C:\xampp\htdocs\canal\codeigniter\login\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `g...')
+#2 C:\xampp\htdocs\canal\codeigniter\login\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `g...')
+#3 C:\xampp\htdocs\canal\codeigniter\login\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `g...')
+#4 C:\xampp\htdocs\canal\codeigniter\login\app\Database\Migrations\2024-12-05-072137_CreateGastosTable.php(51): CodeIgniter\Database\Forge->createTable('gastos')
+#5 C:\xampp\htdocs\canal\codeigniter\login\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateGastosTable->up()
+#6 C:\xampp\htdocs\canal\codeigniter\login\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\canal\codeigniter\login\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\canal\codeigniter\login\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\canal\codeigniter\login\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\canal\codeigniter\login\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\canal\codeigniter\login\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\canal\codeigniter\login\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-12-05 08:42:28 --> ErrorException: Undefined array key "usuario_id"
+[Method: POST, Route: api/gastos]
+in APPPATH\Controllers\GastoController.php on line 47.
+ 1 APPPATH\Controllers\GastoController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario_id"', 'C:\\xampp\\htdocs\\canal\\codeigniter\\login\\app\\Controllers\\GastoController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GastoController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GastoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\canal\\codeigniter\\login\\public\\index.php')
+CRITICAL - 2024-12-05 08:50:35 --> ErrorException: Undefined array key "usuario_id"
+[Method: POST, Route: api/gastos]
+in APPPATH\Controllers\GastoController.php on line 47.
+ 1 APPPATH\Controllers\GastoController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario_id"', 'C:\\xampp\\htdocs\\canal\\codeigniter\\login\\app\\Controllers\\GastoController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GastoController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GastoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\canal\\codeigniter\\login\\public\\index.php')
+CRITICAL - 2024-12-05 08:50:39 --> ErrorException: Undefined array key "usuario_id"
+[Method: POST, Route: api/gastos/]
+in APPPATH\Controllers\GastoController.php on line 47.
+ 1 APPPATH\Controllers\GastoController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario_id"', 'C:\\xampp\\htdocs\\canal\\codeigniter\\login\\app\\Controllers\\GastoController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GastoController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GastoController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\canal\\codeigniter\\login\\public\\index.php')
